@@ -133,6 +133,7 @@ class Template:
                     pdf.rotate(0)
         
         if dest:
+            pdf.close()
             return pdf.output(outfile, dest)
         
     def text(self, pdf, x1=0, y1=0, x2=0, y2=0, text='', font="arial", size=10, 
